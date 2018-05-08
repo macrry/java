@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class de05 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入a的坐标：");
+			int x1 = sc.nextInt();
+		    int y1 = sc.nextInt();
+		System.out.println("请输入b的坐标：");
+		    int x2 = sc.nextInt();
+		    int y2 = sc.nextInt();
+		int temp = (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);
+		System.out.println(temp);
+
+		double answer =Math.pow( temp , 0.5);
+
+		System.out.println("两点间的距离为："+answer);
+
+
+	}
+}
