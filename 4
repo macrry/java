@@ -1,0 +1,30 @@
+/*
+  
+  System.currentTimeMillis();
+  返回当前时间与1970年1月1日午夜的时间差 单位毫秒
+*/
+
+class de04 
+{
+	public static void main(String[] args) 
+	{
+		
+		long sum = System.currentTimeMillis();
+		//总的秒数
+		long sumSeconds = sum / 1000;
+		//当前的秒数
+		long currentSecond =sumSeconds % 60;
+		//总的分钟数
+		long sumMinutes = sumSeconds /60;
+		//当前分钟数
+		long currentMinute = sumMinutes % 60;
+		//总的小时数
+		long sumhours=sumMinutes / 60;
+		//当前的小时数
+		long currenthour = sumhours % 24;
+		//北京时间
+		long beijinghour = (currenthour + 8) % 24;
+        
+		System.out.println(beijinghour + ":" + currentMinute + ":" +currentSecond);
+	}
+}
