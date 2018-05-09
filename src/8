@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class de08 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入一个时间，格式为hh,mm,ss");
+		int hour = sc.nextInt();
+		int minute =sc.nextInt();
+		int second =sc.nextInt();
+		System.out.println("现在的时间为："+hour+":"+minute+":"+second);
+		
+		second++;
+
+		if(second == 60)
+		{
+			second =0;
+			minute++;
+			if(minute ==60)
+			{
+				minute =0;
+				hour++;
+				if(hour==24)
+				{
+					hour=0;
+				}
+			}
+		}
+		System.out.println("下一秒的时间为："+hour+":"+minute+":"+second); 
+	}
+}
