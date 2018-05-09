@@ -1,0 +1,25 @@
+class de11 
+{
+	public static void main(String[] args) 
+	{
+		Tlight light =Tlight.red;
+		System.out.println(light);
+
+		switch (light)
+		{
+		case red:
+			System.out.println("红灯停");
+		    break;
+		case green:
+			System.out.println("绿灯行");
+			break;
+		case yellow:
+			System.out.println("黄灯等一等");
+		    break;
+		
+		}
+	}
+}
+enum Tlight{
+	red,green,yellow
+}
