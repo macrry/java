@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class de07 
+{
+	public static void main(String[] args) 
+	{
+        Scanner sc = new Scanner(System.in);
+		System.out.println("请输入成绩：");
+		int cj = sc.nextInt(); 
+
+
+		if(cj<0 || cj>100)
+		{
+		     System.out.println("输入成绩错误,只能输入0~100之间的数字");
+			 return;
+		}
+
+		if(cj >=90)
+		{
+			System.out.println("成绩等级为A！");
+		}else if (cj >=80)
+		{
+			System.out.println("成绩等级为b！");
+		}else if (cj >=70)
+		{
+			System.out.println("成绩等级为c！");
+		}else if (cj >=60)
+		{
+			System.out.println("成绩等级为d！");
+		}else {
+			System.out.println("成绩等级为e！");
+		}
+	}
+}
