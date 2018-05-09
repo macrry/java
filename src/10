@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class  de10
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.println("请输入年份和月份：");
+			int year = sc.nextInt();
+		    int month = sc.nextInt();
+
+		String str ="";
+
+		switch (month)
+		{
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			str ="31";
+		break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			str="30";
+		case 2:
+			if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+			{
+			str="29";
+		}else {str ="28";}
+		break;
+
+		default :
+			System.out.println("输入的月份有错误！");
+		}
+		System.out.println(year+"年"+month+"月"+"有"+str+"天");
+	}
+}
