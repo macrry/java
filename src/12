@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class de12 
+{
+	public static void main(String[] args) 
+	{
+		int a =(int)(Math.random()*10);
+		int b =(int)(Math.random()*10);
+		System.out.println("A="+a+"  B="+b);
+		Scanner sc= new Scanner(System.in);
+		System.out.println("请输入A+B的值：");
+		int num =sc.nextInt();
+		if(num == a+b)
+		{
+			System.out.println("计算正确");
+		}else{
+				System.out.println("计算错误，正确结果为"+(a+b));
+			}
+	}
+}
