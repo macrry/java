@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class de18
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("请输入学生个数：");
+		int num =sc.nextInt();
+
+		String name1 ="";
+		int score1 =0;
+		String name2 ="";
+		int score2 =0;
+
+
+		for(int i=0;i<num;i++)
+		{
+			System.out.println("请输入学生姓名：");
+			String name =sc.next();
+			System.out.println("请输入学生分数：");
+			int score =sc.nextInt();
+
+			if(score > score1){
+
+				score2 = score1;
+				name2 =name1;
+
+				score1 = score;
+				name1=name;
+			}else if(score >score2){
+				score2 =score;
+				name2=name;
+			}
+		}
+		if(num>=2)
+		{
+			System.out.println("成绩第一的学生的名字："+name1+" 成绩"+score1);
+			System.out.println("成绩第二的学生的名字："+name2+" 成绩"+score2);
+		}else if(num>=1)
+		{
+			System.out.println("成绩第一的学生的名字："+name1+" 成绩"+score1);
+		}else {
+			System.out.println("没有学生。");
+		}
+
+	}
+}
