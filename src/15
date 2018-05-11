@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class de15 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		int answer = (int)(Math.random()*100);
+		int b =100;
+		while(b!=answer){
+			System.out.println("请输入你的猜测：");
+			b=sc.nextInt();
+			if(b>answer)
+			{
+				System.out.println("猜测大了，请重新猜一猜");
+			}else if(b<answer)
+			{
+					System.out.println("猜测小了，请重新猜一猜");
+				}
+		}
+		System.out.println("恭喜终于猜对了，答案是："+answer);
+	}
+}
