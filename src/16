@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class de16 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("请输入一个正整数：");
+		int num =sc.nextInt();
+		
+		int y = num;
+		int r = 0;
+		String str = "";
+		while(y!=0){
+			r= y % 2;
+			y = y/2;
+			str = r +str;
+		}
+		System.out.println(num +"的二进制数为："+str);
+	
+	}
+}
