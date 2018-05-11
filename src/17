@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class de17 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入一个整数：");
+		int num = sc.nextInt();
+		int r =0;
+		String str = "";
+		if(num < 0){
+			str =str +"-";
+			num =-1*num;
+		}
+		while(num != 0){
+			r =num % 10;
+			str += r;
+			num =num/10;
+		}
+		System.out.println("逆序后："+ str);
+	}
+}
