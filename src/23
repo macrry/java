@@ -1,0 +1,27 @@
+package demo;
+/**
+ 方法递归调用    n的阶乘
+ */
+public class de03 {
+	public static void main(String[] args) {
+		System.out.println(jc(5));
+		System.out.println(digui(6));
+	}
+	public static int  jc(int n) {
+		if (n == 1) {
+			return 1;
+		}
+		int x =1;
+		for(int i=1;i<=n;i++){
+			
+			x *=i;
+		}
+		return x;
+	}
+	public static int digui(int n) {
+		if (n==1) {
+			return 1;
+		}
+		return digui(n-1)*n;
+	}
+}
