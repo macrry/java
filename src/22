@@ -1,0 +1,31 @@
+package demo;
+
+import java.util.Scanner;
+
+/**
+一个参数，有返回值，输入一个数，判断是不是素数*/
+public class de02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		System.out.println("请输入一个整数：");
+		int x =sc.nextInt();
+		System.out.println(isbean(x));
+		
+	}
+	public static boolean isbean(int x) {
+		int n=0;
+		for (int i = 2; i < x; i++) {
+			if (x % i ==0) {
+				n =i;
+			}
+		}
+		if (n !=0) {
+			return false;
+		}else {
+			return true;
+		}
+		
+	}
+}
