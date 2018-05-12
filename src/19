@@ -1,0 +1,40 @@
+/*
+打印
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+*/
+
+class de19 
+{
+	public static void main(String[] args) 
+	{
+		for(int i=1;i<=5;i++)
+		{
+			for(int x=5;x>i;x--)
+			{
+				System.out.print(" ");
+			}
+			for(int n=1;n<=i;n++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		for(int i=4;i>=1;i--)
+		{
+			for(int x=5;x>i;x--)
+			{
+				System.out.print(" ");
+			}
+			for(int n=1;n<=i;n++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+}
