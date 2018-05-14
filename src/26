@@ -1,0 +1,32 @@
+package demo;
+//素数
+public class de06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(num(2, 10));
+	}
+	public static int num(int x,int y) {
+		int sum =0;
+		if(x>y){
+			int t;
+			x =y;
+			t =x;
+			y =t;
+		}
+		for (int i = x; i < y; i++) {
+			 if (ss(i)) {
+				sum +=i;
+			}
+			}
+		return sum;
+		}
+	public static boolean ss(int i) {
+		for (int j = 2; j < i; j++) {
+			if (i%j==0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
